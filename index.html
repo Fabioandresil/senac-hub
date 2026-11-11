@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conheça ideias que viram projetos. Explore a vitrine de inovação dos estudantes do SENAC."
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>SENAC Hub — ideias que transformam</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="SENAC Hub, início">
+        <span class="brand-mark" aria-hidden="true">s</span>
+        <span>SENAC <span class="brand-light">HUB</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="nav-link active" href="#projetos">Projetos</a>
+        <a class="nav-link" href="#sobre">Sobre o Hub</a>
+      </nav>
+      <a class="header-cta" href="#projetos">Explorar vitrine <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="sobre">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> VITRINE DE INOVAÇÃO SENAC</div>
+          <h1>Ideias que<br />transformam <span>o agora.</span></h1>
+          <p>
+            Um espaço para descobrir projetos de estudantes que estão criando novas soluções
+            para o mundo.
+          </p>
+          <a class="primary-button" href="#projetos">
+            Descubra projetos <span aria-hidden="true">↓</span>
+          </a>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="mini-avatar avatar-one">✳</span>
+              <span class="mini-avatar avatar-two">✦</span>
+              <span class="mini-avatar avatar-three">●</span>
+            </div>
+            <span>Talento, criatividade<br />e impacto em movimento.</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração abstrata de criatividade e inovação">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun"><span>+</span></div>
+          <div class="art-note note-top">IDEIAS EM<br />MOVIMENTO</div>
+          <div class="art-note note-bottom">FEITO POR<br />ESTUDANTES <span>↗</span></div>
+          <div class="art-label">CRIAR<br />É TRANSFORMAR</div>
+          <span class="art-spark spark-one">✳</span>
+          <span class="art-spark spark-two">✦</span>
+        </div>
+      </section>
+
+      <section class="showcase" id="projetos" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> FEITO AQUI, PENSADO PARA O MUNDO</div>
+            <h2 id="projects-title">Ideias em destaque<span>.</span></h2>
+          </div>
+          <p>Conheça projetos que conectam criatividade, conhecimento e vontade de fazer diferente.</p>
+        </div>
+
+        <div class="explore-tools">
+          <div class="filters" role="group" aria-label="Filtrar projetos por área">
+            <button class="filter-button selected" type="button" data-filter="Todos" aria-pressed="true">Todos</button>
+            <button class="filter-button" type="button" data-filter="Tecnologia" aria-pressed="false">Tecnologia</button>
+            <button class="filter-button" type="button" data-filter="Sustentabilidade" aria-pressed="false">Sustentabilidade</button>
+            <button class="filter-button" type="button" data-filter="Design" aria-pressed="false">Design</button>
+            <button class="filter-button" type="button" data-filter="Negócios" aria-pressed="false">Negócios</button>
+          </div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Buscar projetos</span>
+            <input id="project-search" type="search" placeholder="Buscar projeto..." autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+        </div>
+
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+        <div class="project-grid" id="project-grid">
+          <article class="project-card" data-category="Sustentabilidade" data-search="raiz urbana horta comunidade alimentação sustentável">
+            <div class="project-art art-green">
+              <span class="project-symbol" aria-hidden="true">✿</span>
+              <span class="project-number">01</span>
+              <span class="art-caption">CULTIVAR<br />O FUTURO</span>
+            </div>
+            <div class="project-info">
+              <div class="card-meta"><span>Sustentabilidade</span><span>2025</span></div>
+              <h3>Raiz Urbana</h3>
+              <p>Hortas comunitárias que aproximam pessoas, alimento fresco e vida na cidade.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="Tecnologia" data-search="pulso app saúde bem-estar tecnologia rotina">
+            <div class="project-art art-lilac">
+              <span class="project-symbol" aria-hidden="true">◉</span>
+              <span class="project-number">02</span>
+              <span class="art-caption">UM TEMPO<br />PARA VOCÊ</span>
+            </div>
+            <div class="project-info">
+              <div class="card-meta"><span>Tecnologia</span><span>2025</span></div>
+              <h3>Pulso</h3>
+              <p>Um app que ajuda a criar hábitos mais leves de cuidado e bem-estar.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="Design" data-search="circular estúdio moda design reutilização roupas">
+            <div class="project-art art-orange">
+              <span class="project-symbol" aria-hidden="true">⟲</span>
+              <span class="project-number">03</span>
+              <span class="art-caption">VISTA<br />NOVAS IDEIAS</span>
+            </div>
+            <div class="project-info">
+              <div class="card-meta"><span>Design</span><span>2024</span></div>
+              <h3>Circular Estúdio</h3>
+              <p>Moda autoral que dá novas histórias e novos ciclos para peças esquecidas.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="Negócios" data-search="troca local economia negócios bairro comércio">
+            <div class="project-art art-blue">
+              <span class="project-symbol" aria-hidden="true">↗</span>
+              <span class="project-number">04</span>
+              <span class="art-caption">PERTO DE<br />VOCÊ</span>
+            </div>
+            <div class="project-info">
+              <div class="card-meta"><span>Negócios</span><span>2024</span></div>
+              <h3>Troca Local</h3>
+              <p>Uma rede para fortalecer pequenos negócios e encontros no bairro.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="Tecnologia" data-search="mão amiga acessibilidade tecnologia comunicação libras">
+            <div class="project-art art-yellow">
+              <span class="project-symbol" aria-hidden="true">✋</span>
+              <span class="project-number">05</span>
+              <span class="art-caption">FALAR É<br />CONECTAR</span>
+            </div>
+            <div class="project-info">
+              <div class="card-meta"><span>Tecnologia</span><span>2024</span></div>
+              <h3>Mão Amiga</h3>
+              <p>Recursos digitais para tornar a comunicação mais acessível para todo mundo.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="Sustentabilidade" data-search="maré limpa oceano sustentabilidade resíduos litoral">
+            <div class="project-art art-coral">
+              <span class="project-symbol" aria-hidden="true">≈</span>
+              <span class="project-number">06</span>
+              <span class="art-caption">MAIS AZUL<br />NO HORIZONTE</span>
+            </div>
+            <div class="project-info">
+              <div class="card-meta"><span>Sustentabilidade</span><span>2024</span></div>
+              <h3>Maré Limpa</h3>
+              <p>Uma iniciativa que transforma cuidado com o litoral em ação coletiva.</p>
+            </div>
+          </article>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h3>Nenhum projeto encontrado</h3>
+          <p>Tente outro termo ou escolha uma área diferente.</p>
+        </div>
+      </section>
+      <section class="join-banner" id="contato">
+        <div><span class="eyebrow">SUA IDEIA TAMBÉM TEM ESPAÇO AQUI</span><h2>O próximo projeto pode ser o seu.</h2></div>
+        <p>Converse com sua unidade SENAC para participar da vitrine.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="SENAC Hub, início"><span class="brand-mark" aria-hidden="true">s</span><span>SENAC <span class="brand-light">HUB</span></span></a>
+      <span>Um lugar para ideias ganharem o mundo.</span>
+      <span>© SENAC Hub 2025</span>
+    </footer>
+  </body>
+</html>
